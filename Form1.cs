@@ -237,7 +237,7 @@ namespace Parser_v2
                     lblStatus.Text = $"Downloaded {filename}";
                     downloadedFilesCount++;
                     int progressValue = (int)((downloadedFilesCount / (float)expectedFilesCount) * 100);
-                    progressBar.Value = Clamp(progressValue, 0, 100); // Use custom Clamp method
+                    progressBar.Value = Clamp(progressValue, 0, 100); 
                     AddImageToPanel(filename);
                 });
             }
